@@ -1,13 +1,10 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { addCounter } from '../actions';
 import { bindActionCreators } from 'redux';
 
-class AddCounter extends Component {
-    constructor(props) {
-        super(props);
-    }
+class AddCounter extends React.Component {
     render() {
         return (
             <div className="container">

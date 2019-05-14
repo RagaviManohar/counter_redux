@@ -9,3 +9,8 @@ export const removeCounter = () => ({
     type: actionType.REMOVE_COUNTER,
     payload: 1
 });
+
+export const modifyStoreByObj = (name) => ({
+    type: actionType.GOOD_MORNING,
+    name: name,
+});

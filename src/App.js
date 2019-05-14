@@ -1,19 +1,25 @@
 import React from 'react';
-import CounterRedux from "./components/CounterRedux";
+import ModifyStoreByObj from './containers/ModifyStoreByObj';
+import Counter from './components/Counter';
+import CounterRedux from './components/CounterRedux';
 import AddCounter from './containers/AddCounter';
 import RemoveCounter from './containers/RemoveCounter';
+import ParentComponent from './containers/ParentComponent';
 
 const App = () => {
     return (
         <div className="container">
-            <CounterRedux></CounterRedux><br />
+            <div className="parent-child">
+                <ParentComponent />
+            </div>
+            <Counter /><br />
+            <CounterRedux />
             <div className="columns">
-                <div className="column is-11">
-                    <AddCounter></AddCounter> <br />
-                </div>
-                <div className="column auto">
-                    <RemoveCounter></RemoveCounter> <br />
-                </div>
+                <AddCounter /> <br />
+                <RemoveCounter /> <br />
+            </div>
+            <div >
+                <ModifyStoreByObj />
             </div>
         </div>
     )
