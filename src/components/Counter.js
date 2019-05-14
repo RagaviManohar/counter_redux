@@ -18,11 +18,11 @@ class Counter extends React.Component {
     render() {
         return (
             <div className="counter">
-                <h2>Counter without redux</h2>
+                <h4>Counter without REDUX</h4>
                 <div>
-                    <span className="count">{this.state.count}</span><br /><br />
-                    <button onClick={this.increment}>+</button>
-                    <button onClick={this.decrement}>-</button> <br /><br />
+                    <h1>{this.state.count}</h1>
+                    <button onClick={this.increment}>+</button><br /><br />
+                    <button onClick={this.decrement}>-</button>
                 </div>
             </div>
         );
