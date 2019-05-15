@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import AddCounter from '../containers/AddCounter';
+import RemoveCounter from '../containers/RemoveCounter';
 
 class CounterRedux extends Component {
     render() {
